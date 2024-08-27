@@ -49,20 +49,8 @@ def create_new_stack(input_stack):
 
 
 def main():
-    # delete later 
-    # # Example usage:
-    stack = None  # Start with an empty stack
-    stack = push(stack, 10)
-    stack = push(stack, 20)
-    popped_data, stack = pop(stack)  # Pops 20
-    popped_data, stack = pop(stack)  # Pops 10
-    popped_data, stack = pop(stack)  # Stack is empty
     input_stack = [(None, 101), (101, 87), (87, 122), (208, 74), (74, 107), (107, 152), (152, 130), (130, None)]
-
-    # Generate the output stack
     output_stack = create_new_stack(input_stack)
-
-    # Print the output stack
     print(output_stack)
 
     
