@@ -16,12 +16,16 @@ def pop(stack):
 def is_empty(stack):
     return stack is None
 
+def main():
+    # delete later 
+    # # Example usage:
+    stack = None  # Start with an empty stack
+    stack = push(stack, 10)
+    stack = push(stack, 20)
+    popped_data, stack = pop(stack)  # Pops 20
+    popped_data, stack = pop(stack)  # Pops 10
+    popped_data, stack = pop(stack)  # Stack is empty
 
-# delete later 
-# # Example usage:
-# stack = None  # Start with an empty stack
-# stack = push(stack, 10)
-# stack = push(stack, 20)
-# popped_data, stack = pop(stack)  # Pops 20
-# popped_data, stack = pop(stack)  # Pops 10
-# popped_data, stack = pop(stack)  # Stack is empty
+if __name__ == "__main__":
+    main()
+
