@@ -43,11 +43,19 @@ def createViewArray(buildingArray):
     return viewArray
 
 def main():
-    buildingArray = [101, 87, 122, 208, 74, 107, 152, 130]
-    # viewStack = createNewStack(buildingArray)
-    # print(viewStack)
+    buildingArray = []
+    while (len(buildingArray) != 30):
+        inputString = input("Please Enter a list of exactly 30 building heights (seperated by commas): ")
+        buildingArray = inputString.split(",")
+        buildingArray = [int(x) for x in buildingArray]
     
-    print(createViewArray(buildingArray))    
+    outputArray = createViewArray(buildingArray)
+    for i in range(len(buildingArray)):
+        print("Building number " + str(i) + " : " + str(outputArray[i]) + "")
+        
+        
+    
+        
 
 if __name__ == "__main__":
     main()
