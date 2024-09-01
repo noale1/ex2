@@ -51,7 +51,7 @@ def main():
     
     outputArray = createViewArray(buildingArray)
     for i in range(len(buildingArray)):
-        print("Building number " + str(i) + " : " + str(outputArray[i]) + "")
+        print("Building number " + str(i + 1) + " : " + str(outputArray[i]) + "")
         
         
     
