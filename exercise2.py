@@ -1,3 +1,6 @@
+# Noa Levy - 302321567 - נועה לוי
+# Yam Zebrak - 207883364 - ים זברק
+
 def createNode(data):
     return (data, None)
 
@@ -53,9 +56,5 @@ def main():
     for i in range(len(buildingArray)):
         print("Building number " + str(i + 1) + " : " + str(outputArray[i]) + "")
         
-        
-    
-        
-
 if __name__ == "__main__":
     main()
